@@ -1,19 +1,112 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html>
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles.css">
-  <title>Vanilla JavaScript App</title>
+  <title>FARGO WELLNESS DISTRICT</title>
+  <link rel="stylesheet" type="text/css" href="css/index.css" />
+  <meta name="description" content="Fargo Wellness District Is The Premier Botox, Dermal Filler & Medical Weight Loss Clinic In The Fargo Moorhead Area. We Take The Time. It's What We Do." />
+  <meta name="keywords" content="Fargo Wellness District, North Dakota Wellness District, Wellness District" />
+  <meta name="viewport" width="width=device-width, initial-scale=1.0" />
+  <!-- lato font !-->
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet" />
+
 </head>
 
 <body>
   <main>
-    <h1>Vanilla JavaScript App</h1>
-    <h2>Successful Test</h2>
-    <button style="submit">Submit Here</button>
-  </main>
-</body>
+  <?php include 'wdheader.php' ?>
+  <?php include 'slideshow.php' ?>
+  <section class="welcome">
+      <div class="left_welcome">
 
+        <h2 class="welcome_title">WELCOME TO WELLNESS DISTRICT<br>MEDICAL WEIGHT LOSS & AESTHETICS</h2>
+        <hr class="welcome_title_bar" />
+
+        <p class="welcome_text">Welcome to Wellness District Medical Weight Loss & Aesthetics.
+              Wellness District's story began when Medical Weight Loss Specialists opened its doors in September of 2011.<br><br>
+
+              Spencer Berry, MD, worked as a Family Physician for 25 years prior to opening the clinic. He started this journey because so many of his patients struggled with their body weight which caused a multitude of related health problems for them. He knew that if he could spend the time he needed discussing weight and educating patients on the science of overweight and obesity that he could make a difference. In his first 3 months practicing Obesity Medicine, Dr. Berry discontinued more medications than he had done in 25 years of Family Medicine.<br><br>
+
+              Focused on improving patients' health both physically and emotionally, exceptional service and patient care brought outstanding patient feedback. Patient reviews indicated our team went above and beyond for their patients. As patients lost weight, they were becoming happier and healthier.<br><br>
+
+              With our team's dedication to its patients, DermPhilosophy was cultivated to expand healthy living. DermPhilosophy opened in May of 2016.<br><br>
+
+              As the clinics grew and the patient base expanded rapidly at both clinics, the decision was made to combine the two clinics and the Wellness District will open in a new location in December of 2019. For now, patients can get started with any of our services at our current location. The staff at the Wellness District has now helped over 5,000 patients become happier and healthier. Our passion and dedication to our patients is what sets our clinic apart from any other clinic in the area.
+              </p>
+
+      </div>
+      <div class="right_welcome">
+        <form class="vipform" action="action.php" method="post">
+            <a class="book_online_button_index" href="https://schedulingapp.mypatientnow.com/Account/Login/719"><h2>CLICK HERE TO BOOK ONLINE</h2></a>
+            <p class="ftext"><h2>OR</h2></p>
+            <h2>JOIN OUR VIP TEXT CLUB</h2>
+		    <label for="fname">Name</label>
+		    <input type="text" id="name" name="name" placeholder="Your name..">
+
+		    <label for="lname">Date Of Birth</label>
+		    <input type="date" id="birth" name="birth" placeholder="When Were you born..">
+
+				<label for="email">Email Address</label>
+				<input type="email" id="email" name="email" placeholder="Your Email Address..">
+
+				<label for="tel">Phone Number</label>
+				<input type="tel" id="tel" name="tel" placeholder="Your Cell Phone Number..">
+
+
+		    <label for="subject">What are you interested in?</label>
+		    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+		    <button class="form_submit_button" action="action.php" method="post" type="submit" value="Submit">SUBMIT</button>
+
+		  </form>
+      </div>
+  </section>
+
+  <section class="aesthetic_section">
+    <img class="aesthetic_services" src="pics/botoxback-desk.jpg" />
+    <h2 class="aesthetic_title">WELLNESS DISTRICT AESTHETICS</h2>
+    <ul class="aesthetic_list">
+
+      <li>Botox</li>
+      <li>Dermal Filler</li>
+      <li>Body Contouring</li>
+      <li>LipoTropic (Fat Loss) Injections</li>
+      <li>Skin Care Services</li>
+
+    </ul>
+    <button class="aesthetic_button" type="submit">LEARN MORE</button>
+  </section>
+
+  <section class="weightloss_section">
+    <img class="weightloss_services" src="pics/docback-desk.jpg" />
+    <h2 class="weightloss_title">WELLNESS DISTRICT MEDICAL WEIGHT LOSS</h2>
+    <ul class="weightloss_list">
+
+      <li>Nutritional Program</li>
+      <li>Pediatric Nutritional Program</li>
+      <li>Metabolic Detox</li>
+      <li>LipoTropic (Fat Loss) Injections</li>
+      <li>KE Diet</li>
+
+    </ul>
+    <button class="weightloss_button" type="submit">LEARN MORE</button>
+  </section>
+
+  <section class="strongpour_section">
+    <img class="strongpour_services" src="pics/shakeback-desk.jpg" />
+    <h2 class="strongpour_title">StrongPour Nutrition Bar</h2>
+    <ul class="strongpour_list">
+
+      <li>Signature Blended Protein Shakes</li>
+      <li>Protein Infused Coffee Drinks</li>
+      <li>Protein Infused Ice Tea</li>
+      <li>Health Food Convenience Store</li>
+      <li>Alcohol Sugar Calculator</li>
+
+    </ul>
+    <button class="strongpour_button" type="submit">LEARN MORE</button>
+  </section>
+</main>
+
+<?php include 'wdfooter.php' ?>
+</body>
 </html>
